@@ -1,29 +1,27 @@
-mport java.util.*;
-  import java.io.*;
-   class B02{
-            void input(){
-	                     Scanner s = new Scanner(System.in);
-			                      System.out.print("Kor Grade:"); 
-					                       int kor = s.nextInt();
-							                        System.out.print("Eng Grade:");
-										                 int eng = s.nextInt();
-												                  System.out.print("Math Grade:");
-														                   int math = s.nextInt();
-																                   int total = kor+eng+math;
-																		                    double avg = (double)total/3.0;
-																				                    print("Total :  "+total );
-																						                     print("Avg is "+avg );
-																								              }
-																									               void print(String str){
-																										       		if (kor > 90) {
-																															System.out.print("Korea Score is good");
-																																			}
-																																			                 System.out.println(str);
-																																					          }
-																																						           public static void main(String [] args) throws IOException{
+import java.util.Scanner;
+ 
+ public class B02 {
+   
+   	void temp()
+		{
+		        Scanner s = new Scanner(System.in);        
+			        double t;
+					System.out.println("INPUT TEMPERATURE:");
+						t = s.nextDouble();
+							System.out.println("CHOOSE ONE  C(press 0)   OR  F(press 1)  : ");
+								int b = s.nextInt();	
+									if ( b == 0 ) {
+									        System.out.println(t);   
+											  }
+											  	else {
+												        double tempera = 9/5.0*t + 32;
+													        System.out.println(tempera);	
+															  }
 
-																																							                   System.out.print("============================\n");
-																																									                    new B02().input();
-																																											             }
-																																												      }
+															  	}
+																     
+																         public static void main(String[] args) {
+																	 		new B02().temp();
+																				}
+																				    }
 
